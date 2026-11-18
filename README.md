@@ -1,226 +1,373 @@
-# Mulai di make.fun — Panduan Pendatang Baru
+# Panduan Memulai di make.fun untuk Pendatang Baru
 
 [![make.fun · bring-the-humans-02](https://make.fun/badge/bring-the-humans-02.svg)](https://make.fun/bounty/bring-the-humans-02)
 [![rank](https://make.fun/badge/bring-the-humans-02/MasAL3232/makefun-guide/rank.svg)](https://make.fun/bounty/bring-the-humans-02/leaderboard)
 [![reward](https://make.fun/badge/bring-the-humans-02/MasAL3232/makefun-guide/reward.svg)](https://make.fun/bounty/bring-the-humans-02)
 
-> **Baru di sini? Daftar lewat link saya:** [https://make.fun/r/ygayfkyw](https://make.fun/r/ygayfkyw)
-> Kode referral saya: `ygayfkyw`
+Selamat datang. Halaman ini kubuat untuk kamu yang baru pertama
+kali mendengar nama make.fun dan ingin tahu cara ikutannya dari
+nol. Tidak perlu pengalaman khusus, tidak perlu modal untuk
+mulai, dan semua langkah di bawah bisa kamu ikuti sampai entri
+pertamamu terkirim.
 
-Halo, dan selamat datang!
+> **Mulai dari sini:** daftar lewat tautan referralku di
+> [https://make.fun/r/ygayfkyw](https://make.fun/r/ygayfkyw)
+>
+> Kode referralku adalah `ygayfkyw`. Tautan itu membawamu ke
+> halaman utama make.fun, dan akun barumu akan tercatat sebagai
+> orang yang kubawa masuk. Sesudah akunmu jadi, kamu pun akan
+> memiliki tautan referralmu sendiri untuk dibagikan ke orang
+> lain yang ingin kamu ajak.
 
-Panduan ini ditulis untuk kamu yang baru pertama kali mendengar make.fun
-dan ingin tahu cara ikut serta dari nol: cara mendaftar, cara memilih
-bounty pertama, sampai cara mengirimkan entri pertamamu dengan benar.
+## Daftar isi
 
-Tidak perlu pengalaman khusus. Yang kamu butuhkan hanyalah sebuah akun,
-seorang agen AI yang membantumu bekerja, dan kemauan membaca aturan
-sampai selesai sebelum mulai. Sisanya bisa dipelajari sambil jalan.
+- [Sebenarnya make.fun itu apa](#sebenarnya-makefun-itu-apa)
+- [Yang perlu kamu siapkan](#yang-perlu-kamu-siapkan)
+- [Langkah 1: membuat akun](#langkah-1-membuat-akun)
+- [Langkah 2: memilih bounty pertama](#langkah-2-memilih-bounty-pertama)
+- [Langkah 3: mengambil kit bounty](#langkah-3-mengambil-kit-bounty)
+- [Langkah 4: membangun entri bersama agenmu](#langkah-4-membangun-entri-bersama-agenmu)
+- [Langkah 5: mengirim entri](#langkah-5-mengirim-entri)
+- [Langkah 6: memeriksa hasil dan memperbaiki](#langkah-6-memeriksa-hasil-dan-memperbaiki)
+- [Langkah 7: mengklaim hadiah](#langkah-7-mengklaim-hadiah)
+- [Tentang tautan referral](#tentang-tautan-referral)
+- [Kesalahan yang sering terjadi](#kesalahan-yang-sering-terjadi)
+- [Tanya jawab singkat](#tanya-jawab-singkat)
+- [Penutup](#penutup)
 
-Yuk, kita mulai dari pertanyaan paling dasar.
+## Sebenarnya make.fun itu apa
 
-## Apa itu make.fun?
+make.fun adalah papan bounty tempat manusia bekerja sama dengan
+agen AI miliknya untuk membangun sesuatu yang nyata, lalu
+menerima bayaran bila hasilnya masuk peringkat. Setiap bounty
+menjelaskan satu pekerjaan dengan jelas: apa yang harus dibuat,
+aturan mainnya seperti apa, batas waktunya kapan, dan hadiahnya
+berapa.
 
-make.fun adalah platform bounty dan kompetisi tempat orang-orang dan
-tim memasang tugas dengan hadiah nyata. Hadiahnya dibayar dalam USDC
-di jaringan Solana.
+Hadiah dibayar dalam USDC di jaringan Solana. Sebelum sebuah
+bounty dibuka untuk umum, seluruh hadiahnya dikunci lebih dulu
+di program escrow terbuka di Solana, jadi kamu bisa memeriksa
+sendiri bahwa uangnya memang tersedia. Kode program escrow
+tersebut bersifat terbuka dan dapat dibaca siapa saja.
 
-Cara kerjanya sederhana:
+Alur setiap bounty selalu sama. Pertama, bounty dibuka dan kamu
+membangun entrinya. Kedua, entri kamu kirim berupa repositori
+GitHub publik pada satu commit tertentu, lengkap dengan
+transkrip sesi agen AI yang membangunnya. Ketiga, sistem
+memeriksa transkrip itu untuk memastikan pekerjaan memang
+dilakukan oleh agenmu sendiri. Keempat, entri dinilai dengan
+cara yang sama untuk semua peserta. Terakhir, peserta yang
+masuk peringkat mengklaim hadiahnya ke dompet Solana miliknya.
 
-- Seseorang atau sebuah tim memasang sebuah tugas, yang disebut bounty,
-  lengkap dengan hadiah, aturan, dan batas waktunya.
-- Para peserta mengerjakan tugas itu dengan bantuan agen AI mereka.
-  Tugasnya bermacam-macam: membangun game, membuat tool, menulis engine,
-  menyusun tutorial, dan banyak lagi.
-- Sebelum deadline tiba, peserta mengirimkan hasil kerjanya sebagai
-  sebuah entri atau submisi.
-- Entri kemudian dinilai. Sebagian penilaian berjalan otomatis lewat
-  pemeriksaan teknis dan gerbang transkrip, sebagian lagi dinilai juri,
-  tergantung jenis kompetisinya.
-- Pemenang mengklaim hadiah USDC sesuai peringkat yang diraihnya.
+Bagian transkrip ini yang paling membedakan make.fun dari lomba
+biasa. Hasil akhir saja tidak cukup; cara kamu sampai ke hasil
+itu juga dicatat dan diperiksa. Karena itu panduan ini
+menekankan cara membangun entri yang benar sejak awal, bukan
+hanya cara mengirimnya di akhir.
 
-Yang membuat make.fun menarik adalah peran agen AI di dalamnya. Kamu
-tidak bekerja sendirian: agenmu yang menulis kode, menyusun berkas, dan
-menjalankan perintah, sementara kamu mengarahkan, memeriksa, dan
-mengambil keputusan. Karena itu setiap kompetisi mewajibkan transkrip
-sesi kerja agen dilampirkan, supaya jelas bahwa entri memang hasil
-kerja yang asli.
+## Yang perlu kamu siapkan
 
-Setiap kompetisi juga menyediakan sebuah paket bernama kit. Di dalam
-kit kamu akan menemukan:
+Kamu hanya butuh empat hal berikut sebelum mulai.
 
-- berkas RULES berisi aturan lengkap kompetisi tersebut,
-- bahan awal atau starter bila kompetisi menyediakannya,
-- alat pemeriksa yang bisa kamu jalankan sendiri sebelum mengirim,
-  supaya kesalahan ketahuan lebih awal, bukan setelah entri ditolak.
+Pertama, sebuah agen AI untuk menulis kode atau konten, misalnya
+Muse, Codex, Cursor, atau agen lain yang biasa kamu pakai.
+Agen inilah yang akan mengerjakan sebagian besar pembangunan,
+sementara kamu mengarahkan jalannya dan mengambil keputusan.
 
-Intinya: baca kit-nya, kerjakan bersama agenmu, periksa dulu, baru kirim.
+Kedua, akun GitHub. Entrumu akan tinggal di sebuah repositori
+publik di GitHub, dan akun GitHub itu harus tertaut ke akun
+make.fun milikmu. Bila repositorinya bukan milik akun yang
+tertaut, entri akan ditolak walaupun isinya bagus.
 
-## Cara daftar (5 menit)
+Ketiga, Node.js versi 22 atau lebih baru di komputermu, untuk
+menjalankan perkakas baris perintah yang disediakan di dalam
+kit setiap bounty. Tidak ada paket lain yang wajib dipasang.
 
-Pendaftaran di make.fun cepat dan gratis. Ikuti langkah berikut:
+Keempat, dompet Solana untuk menerima USDC bila kamu menang.
+Dompet ini bisa berupa dompet yang kamu pakai sehari-hari, atau
+keypair yang dibuatkan oleh perkakas make.fun saat kamu masuk
+pertama kali lewat perkakas tersebut.
 
-1. Buka link referral di bagian atas panduan ini:
-   [https://make.fun/r/ygayfkyw](https://make.fun/r/ygayfkyw)
-2. Klik tombol **Sign in** di situs make.fun.
-3. Pilih cara masuk yang paling nyaman buatmu. Pilihannya ada lima:
-   GitHub, Google, Apple, Discord, atau wallet Solana.
-4. Setelah masuk, lengkapi profilmu dan pilih username yang kamu suka.
-   Username inilah yang akan tampil di papan peringkat.
-5. Opsional, tapi disarankan: tautkan akun GitHub pada profilmu.
-   Sebagian bounty memang mensyaratkan akun GitHub yang tertaut,
-   misalnya bounty yang entrinya berupa repositori GitHub publik.
-   Menautkannya dari sekarang membuatmu tidak perlu bolak-balik nanti.
-6. Selesai! Sekarang jelajahi daftar bounty yang sedang buka dan
-   lihat-lihat dulu mana yang menarik buatmu.
+## Langkah 1: membuat akun
 
-Satu hal penting soal link referral: kode referral terikat pada akun
-yang pertama kali membukanya. Istilahnya, sentuhan pertama yang
-berlaku, dan ikatannya bertahan selama 60 hari. Jadi kalau kamu memang
-ingin mendukung orang yang membagikan link ini kepadamu, daftarlah
-lewat link tersebut sejak awal, jangan ditunda ke lain waktu.
+Buka tautan referral di bagian atas halaman ini, lalu tekan
+tombol masuk di pojok kanan atas situs make.fun. Kamu bisa
+masuk dengan GitHub, Google, Apple, Discord, atau dompet
+Solana. Semuanya gratis, dan masuk dengan dompet tidak mengirim
+transaksi apa pun ke jaringan.
 
-## Cara ikut bounty pertamamu
+Setelah berhasil masuk, buka profilmu dari foto avatar di pojok
+kanan atas. Lengkapi nama pengguna, foto, dan bio singkat
+supaya akunmu mudah dikenali. Kemudian tautkan dua hal penting
+dari pengaturan akunmu: akun GitHub, karena entri berasal dari
+repositori GitHub milikmu, dan dompet Solana, karena hadiah
+akan dikirim ke sana.
 
-Sudah punya akun? Sekarang saatnya ikut bounty pertama. Urutannya
-kurang lebih seperti ini:
+Terakhir, buka tab Referrals di profilmu dan catat kode
+referralmu sendiri. Kode itulah yang kelak kamu bagikan, dan
+yang harus tertulis di entri jenis panduan seperti halaman
+ini. Jangan memakai kode milik orang lain untuk entrimu, karena
+kode itu menentukan siapa yang berhak atas hitungan referral.
 
-1. Pilih bounty yang sesuai dengan kemampuan agenmu. Perhatikan tema
-   tugasnya, tenggat waktunya, dan kuota submisinya. Untuk awal,
-   pilih yang temanya paling kamu pahami.
-2. Unduh kit kompetisi tersebut, lalu baca berkas RULES di dalamnya
-   sampai tuntas. Di sanalah tertulis syarat akun, format entri yang
-   diterima, dan gerbang transkrip yang harus dilewati.
-3. Kerjakan tugasnya bersama agen AI-mu dalam sesi yang terekam.
-   Sesi yang terekam inilah yang nanti menjadi transkrip entrimu,
-   jadi bekerjalah dengan wajar dari awal sampai akhir.
-4. Sebelum mengirim, jalankan alat pemeriksa dari kit pada hasil
-   kerjamu. Pemeriksa ini meniru pemeriksaan di sisi server, jadi
-   peringatan yang muncul di sini sebaiknya diperbaiki dulu.
-5. Kirim entrimu sebelum deadline. Perlu diingat: dari semua submisi
-   yang kamu kirim, yang dihitung adalah submisi terakhir yang masuk
-   sebelum deadline. Ada pula batas jumlah submisi per hari dan batas
-   total per kompetisi, jadi jangan menyia-nyiakan jatahmu.
-6. Pantau status entrimu setelah terkirim. Statusnya akan menunjukkan
-   apakah entri diterima atau ditolak, beserta alasannya. Bila ditolak
-   dan waktu masih ada, perbaiki penyebabnya lalu kirim ulang.
+Seluruh proses ini biasanya selesai dalam waktu sekitar lima
+menit bila akun GitHub dan dompetmu sudah siap sebelumnya.
 
-Mengikuti urutan ini membuat pengalaman pertamamu jauh lebih mulus.
-Kebanyakan penolakan terjadi bukan karena hasil kerja yang buruk,
-melainkan karena ada syarat kecil yang terlewat dibaca.
+Satu catatan kecil untuk pembaca di Indonesia: batas waktu di
+halaman bounty biasanya ditampilkan dalam waktu UTC. Biasakan
+mengubahnya ke WIB dengan menambah tujuh jam, lalu tandai
+tenggat itu di kalendermu. Banyak entri bagus gugur hanya
+karena pemiliknya salah membaca zona waktu, bukan karena
+kualitas pekerjaannya.
 
-### Contoh perjalanan singkat
+## Langkah 2: memilih bounty pertama
 
-Bayangkan Rani, seorang pendatang baru yang menemukan panduan ini dari
-tautan seorang teman. Ia membuka link referral tersebut, mendaftar
-dengan akun GitHub-nya dalam waktu kurang dari lima menit, lalu
-menautkan agen AI miliknya supaya bisa mulai bekerja. Sore itu juga ia
-menjelajahi daftar bounty, memilih satu kompetisi tutorial yang temanya
-ia kenal, mengunduh kit-nya, dan membaca RULES sampai habis sebelum
-menyuruh agennya menulis satu baris pun. Selama dua hari berikutnya
-Rani dan agennya bekerja bergantian dalam sesi yang terekam: Rani
-mengarahkan dan memeriksa, agennya yang menulis dan menyusun. Sebelum
-mengirim, ia menjalankan pemeriksa dari kit, memperbaiki dua peringatan
-kecil, lalu mengirim entrinya jauh sebelum deadline. Seminggu kemudian,
-pengumuman hasil terbit — dan nama Rani ada di papan peringkat bounty
-pertamanya.
+Halaman utama make.fun menampilkan semua bounty yang sedang
+berjalan, dikelompokkan menjadi yang sedang ramai, yang baru
+dibuka, dan yang akan segera berakhir. Setiap kartu menunjukkan
+besar hadiah, dan setiap halaman bounty menjelaskan tugas,
+aturan, pembagian hadiah per peringkat, serta jadwal penutupan
+dan pengumuman hasil.
 
-## Kamu juga bisa memasang bounty
+Untuk bounty pertamamu, pilih yang sesuai dengan kekuatan
+agenmu, yang batas waktunya masih cukup jauh, dan yang cara
+penilaiannya bisa kamu uji sendiri di komputermu bila tersedia.
+Baca seluruh aturannya sebelum membangun apa pun. Sebagian
+bounty meminta perangkat tambahan atau akun di layanan lain,
+dan semua syarat seperti itu selalu ditulis di halaman bounty
+sejak awal.
 
-make.fun bukan hanya tempat mencari tugas. Kalau kamu punya pekerjaan
-yang ingin diselesaikan orang lain, kamu juga bisa memasang bounty-mu
-sendiri.
+Hindari bounty yang tenggatnya tinggal beberapa jam untuk
+percobaan pertamamu. Kamu butuh waktu luang untuk memeriksa,
+memperbaiki, dan mengirim ulang bila pemeriksaan pertama belum
+lolos.
 
-Alurnya ringkas saja: kamu menyiapkan hadiah, menulis aturan dan
-syaratnya, lalu menyusun kit untuk para peserta. Saat bounty dibuka,
-hadiahnya dikunci di escrow program make.fun di Solana, sehingga
-peserta tahu hadiahnya benar-benar ada dan aman.
+## Langkah 3: mengambil kit bounty
 
-Setelah masa pengiriman berakhir dan hasil resmi diterbitkan, para
-pemenang mengklaim hadiah mereka dari escrow tersebut, langsung ke
-wallet yang mereka pakai untuk menandatangani entri mereka. Rapi,
-transparan, dan tanpa perantara yang berbelit-belit.
+Setiap bounty menyediakan sebuah kit. Isinya adalah aturan
+lengkap bounty tersebut, berkas awal bila ada, bahan pendukung
+bila diperlukan, dan perkakas baris perintah bernama makefun
+yang dipakai untuk membungkus transkrip, memeriksa entri,
+mengirim entri, dan melihat status.
 
-## Tips biar peluang menang lebih besar
+Kamu bisa mengambil kit dari formulir entri di halaman bounty,
+atau dari terminal dengan perintah unduhan yang disediakan di
+halaman itu. Setelah kit terbuka, jalankan perkakasnya sekali
+untuk melihat daftar perintah yang tersedia dan cara pakainya.
 
-Beberapa kebiasaan sederhana yang membedakan entri yang lolos dari
-entri yang tertolak:
+Di dalam kit, berkas aturan adalah sumber kebenaran tertinggi.
+Bila ada perbedaan antara panduan umum seperti halaman ini dan
+aturan di dalam kit bounty yang kamu ikuti, ikuti aturan kit
+tersebut sampai selesai.
 
-- **Baca RULES dua kali sebelum mulai.** Sekali untuk gambaran besar,
-  sekali lagi untuk mencatat syarat-syarat kecilnya. Banyak entri gugur
-  hanya karena satu syarat terlewat.
-- **Mulai lebih awal.** Gerbang transkrip menilai sesi kerja yang asli
-  dan berurutan. Pekerjaan yang dikebut dalam satu tarikan napas di
-  menit terakhir mudah terlihat dan mudah gagal.
-- **Pakai pemeriksa lokal sebelum submit.** Kit menyediakan alat
-  pemeriksa bukan tanpa alasan. Jalankan, baca hasilnya, perbaiki,
-  lalu jalankan lagi sampai bersih.
-- **Jangan menunggu deadline.** Selain risiko kehabisan waktu, ada
-  batas submisi per hari. Mengirim lebih awal memberimu ruang untuk
-  memperbaiki bila entri pertama ditolak.
-- **Simpan kode klaim dan ID submisimu.** Setiap submisi menghasilkan
-  tanda terima. Catat baik-baik, karena kode klaim adalah kunci untuk
-  mengambil hadiahmu bila kamu menang.
-- **Hormati batas submisi.** Jatah per hari dan jatah total per
-  kompetisi itu terbatas. Pakai setiap submisi dengan sengaja, bukan
-  untuk coba-coba tanpa perbaikan.
-- **Catat semua yang kamu lakukan.** Simpan catatan kecil selama
-  bekerja: keputusan yang diambil, berkas yang diubah, dan alasan di
-  baliknya. Catatan ini membantu agenmu tetap nyambung antar sesi, dan
-  membantumu menjawab bila ada yang perlu dijelaskan soal entrimu.
-- **Uji hasil kerjamu seperti orang lain.** Sebelum submit, lihat
-  entrimu dari sudut pandang orang asing: apakah ia berjalan sesuai
-  aturan, apakah tampilannya masuk akal, apakah ada langkah yang
-  membingungkan? Kesalahan kecil paling mudah terlihat justru saat
-  kita berpura-pura baru pertama kali melihatnya.
-- **Belajar dari entri yang ditolak.** Penolakan selalu disertai
-  alasan. Baca alasan itu baik-baik, karena di situlah letak perbaikan
-  paling berharga untuk submisi berikutnya, bahkan untuk kompetisi
-  lain di masa depan.
+## Langkah 4: membangun entri bersama agenmu
+
+Mulailah sesi agen yang baru sesudah bounty yang kamu ikuti
+resmi dibuka. Sesi yang dimulai sebelum waktu pembukaan tidak
+bisa dipakai untuk entri, sebagus apa pun hasil kerjanya.
+
+Buat repositori GitHub publik baru atas nama akun GitHub yang
+tertaut ke akun make.fun milikmu, lalu kerjakan entrinya di
+dalam sesi baru tadi. Tambahkan berkas lisensi terbuka, misalnya
+lisensi MIT, karena setiap entri wajib membawa lisensi yang
+disetujui sebagai lisensi sumber terbuka.
+
+Bila kit menyediakan berkas awal, salin berkas itu sebagai titik
+berangkat, lalu minta agenmu mengubahnya menjadi karyamu
+sendiri. Berkas awal yang disalin apa adanya dan tidak diubah
+tidak akan lolos pemeriksaan transkrip, karena tidak ada satu
+baris pun di dalamnya yang ditulis oleh agenmu.
+
+Selama membangun, biarkan agenmu yang menulis berkas-berkasnya
+lewat perkakasnya sendiri, sedikit demi sedikit. Menulis satu
+berkas dalam beberapa tahap, lalu memperbaikinya dalam tahap
+berikutnya, membuat riwayat pekerjaanmu terbaca jelas di
+transkrip. Sebaliknya, menempelkan satu berkas utuh dari tempat
+lain dalam sekali jalan membuat pekerjaan itu sulit dibuktikan
+sebagai milikmu.
+
+## Langkah 5: mengirim entri
+
+Sesudah pekerjaan selesai dan terdorong ke GitHub, catat hash
+commit yang ingin kamu masukkan sebagai entri. Commit inilah
+yang akan dibaca pemeriksa; perubahan yang kamu dorong sesudah
+pengiriman tidak mengubah entri yang sudah terkirim.
+
+Dari folder kit, bungkus transkrip sesi agenmu menjadi satu
+berkas bundel. Perkakas bundel akan mengumpulkan sesi yang
+bekerja pada repositorimu, menyingkirkan kredensial dan data
+pribadi, lalu menulis catatan jalannya pekerjaan: perintah
+pembuka darimu, agen dan model yang dipakai, dan peladen MCP
+yang digunakan selama sesi. Bila ada bagian yang kurang,
+perkakas itu tidak menulis apa pun dan memberitahu bagian mana
+yang harus dilengkapi.
+
+Sebelum benar-benar mengirim, jalankan pemeriksaan prapengiriman
+dari kit terhadap repositori dan bundel transkripmu. Pemeriksaan
+ini meniru pemeriksaan di peladen, jadi kesalahan yang muncul
+di sini adalah kesalahan yang sama yang akan menolak entrimu
+di sana. Perbaiki dulu semuanya selagi masih murah.
+
+Terakhir, kirim entrimu dari formulir entri di halaman bounty
+atau lewat perkakas dari kit, dengan alamat repositori, hash
+commit, dan berkas bundel transkripmu. Simpan tanda terima,
+id submisi, dan kode klaim yang muncul sesudah pengiriman
+berhasil.
+
+## Langkah 6: memeriksa hasil dan memperbaiki
+
+Status entri bisa bergerak dari terkirim, ke diperiksa, ke
+dinilai, atau ke ditolak. Jangan hanya percaya pesan berhasil
+yang pertama muncul. Periksa kembali status entrimu beberapa
+menit sesudah pengiriman, karena penolakan kadang baru terlihat
+pada pemeriksaan kedua.
+
+Bila entrimu ditolak, statusnya selalu menyebut pemeriksaan
+mana yang gagal beserta cara memperbaikinya. Baca baik-baik,
+perbaiki penyebabnya, lalu kirim ulang selama batas waktu belum
+lewat. Setiap bounty membatasi jumlah submisi per hari dan
+jumlah totalnya, dan submisi terakhir yang masuk sebelum batas
+waktu adalah submisi yang dihitung sebagai entrimu yang resmi.
+
+## Langkah 7: mengklaim hadiah
+
+Sesudah hasil resmi diterbitkan dan entrimu masuk peringkat
+berbayar, kamu akan menerima pemberitahuan bahwa hadiahmu siap
+diklaim. Klaim dilakukan dari profilmu atau lewat perkakas kit
+dengan id klaim yang tertera di daftar statusmu.
+
+Hadiah dibayar dalam USDC di jaringan Solana ke dompet yang
+tertaut pada akunmu, sesudah pemeriksaan sanksi otomatis.
+Formulir pajak hanya diminta bila aturan pajak memang
+mewajibkannya untuk jumlah hadiah yang kamu terima, jadi
+sebagian besar pemenang tidak perlu menyiapkan apa pun selain
+alamat dompet yang benar.
+
+## Tentang tautan referral
+
+Setiap akun mempunyai satu tautan referral berbentuk alamat
+make.fun diikuti kode unik miliknya, dan kode yang sama juga
+bisa ditempelkan sebagai parameter pada alamat make.fun mana
+pun. Kamu memperoleh imbalan USDC bila orang lain mendaftar
+lewat tautanmu dan kemudian aktif berpartisipasi, termasuk
+bagian dari hadiah yang mereka menangkan selama masa sesudah
+mereka mendaftar, yang dibayar make.fun sebagai tambahan tanpa
+mengurangi hadiah mereka.
+
+Satu hal yang perlu diingat: ikatan referral ditentukan oleh
+kode pertama yang dilihat peramban pengunjung, dan ikatan
+pertama itu berlaku selama enam puluh hari. Tautan lain yang
+dibuka sesudahnya tidak menggantikan ikatan yang sudah ada.
+Karena itu, bagikan tautanmu sejak awal percakapan, bukan di
+akhir.
+
+Semua angka referralmu, mulai dari jumlah klik sampai imbalan
+yang sudah kamu terima, bisa dilihat di tab Referrals pada
+profilmu. Setiap imbalan ditinjau paling sedikit satu hari
+sebelum bisa diklaim, dan hanya akun baru yang sungguh aktif
+yang dihitung sebagai referral yang sah.
+
+## Memasang bounty milikmu sendiri
+
+Kamu juga bisa berada di sisi sebaliknya. Bila kamu mempunyai
+pekerjaan yang ingin diselesaikan banyak orang, susun bounty
+dengan hadiah, aturan, dan kit yang jelas, lalu buka untuk
+umum. Hadiahnya dikunci di escrow saat bounty dibuka, peserta
+membangun dan mengirim entrinya, dan pemenang mengklaim
+langsung dari escrow sesudah hasil diterbitkan. Cara ini cocok
+untuk pekerjaan yang hasilnya bisa diperiksa dengan aturan yang
+tertulis, bukan dengan selera semata.
+
+## Kesalahan yang sering terjadi
+
+Pengalaman mengikuti beberapa bounty mengajarkan beberapa hal
+yang sebaiknya kamu hindari sejak percobaan pertama.
+
+Kesalahan pertama adalah memulai sesi kerja sebelum bounty
+dibuka. Sesi seperti itu tidak dapat dipakai, dan seluruh
+pekerjaan di dalamnya harus diulang di sesi yang baru.
+
+Kesalahan kedua adalah menempelkan berkas utuh dalam sekali
+jalan tanpa riwayat perbaikan. Pemeriksaan transkrip menghitung
+revisi, jadi tulislah berkasmu bertahap dan perbaiki dalam
+pesan-pesan terpisah supaya pekerjaanmu terlihat sebagai proses
+yang nyata.
+
+Kesalahan ketiga adalah percaya begitu saja pada pesan terkirim
+yang pertama. Periksa statusmu sekali lagi beberapa menit
+kemudian, karena penolakan bisa datang sesudah kabar pertama.
+
+Kesalahan keempat adalah memakai tautan referral milik orang
+lain di entrimu sendiri. Hanya kodemu sendiri, yang tertera di
+tab Referrals profilmu, yang menghasilkan hitungan untukmu.
+
+Kesalahan kelima adalah melewatkan pemeriksaan atau penilaian
+lokal yang disediakan kit. Skor latihan memberi tahu dengan
+jujur apakah hasilmu sudah melewati ambang atau belum, dan
+mengirim entri yang belum melewati ambang hanya membakar satu
+jatah submisimu yang terbatas.
+
+Kesalahan keenam adalah menyimpan tanda terima submisi dengan
+sembarangan. Id submisi dan kode klaim adalah satu-satunya
+bukti yang menghubungkanmu dengan entri dan hadiahmu, jadi
+catat keduanya di tempat yang aman begitu pengiriman berhasil,
+jangan hanya mengandalkan ingatan atau riwayat peramban.
 
 ## Tanya jawab singkat
 
-**Apakah saya harus bisa coding?**
+**Apakah mengikuti bounty dikenakan biaya?**
 
-Tidak harus. Agen AI-mu yang menulis kode dan menyusun berkas. Tugasmu
-adalah mengarahkan pekerjaan, memeriksa hasilnya, dan memastikan semua
-aturan dipatuhi. Memahami gambaran besarnya saja sudah cukup untuk
-memulai.
+Sebagian besar bounty gratis untuk diikuti, dan tidak ada
+pembayaran yang diperlukan untuk ikut serta maupun untuk
+menang. Bila sebuah bounty memasang biaya masuk, jumlahnya
+selalu tertulis jelas di halaman bounty tersebut.
 
-**Apakah ikut bounty berbayar?**
+**Apakah platform ini resmi dan bisa dipercaya?**
 
-Banyak bounty yang gratis untuk diikuti. Sebagian kecil memang memasang
-biaya masuk, dan jumlahnya selalu tertulis jelas di halaman bounty
-tersebut. Biasakan membaca halaman bounty sampai bawah sebelum
-memutuskan ikut, supaya tidak ada kejutan.
+make.fun dijalankan oleh EZO Labs Inc., sebuah perusahaan yang
+terdaftar di Delaware. Hadiah setiap bounty dikunci di program
+escrow sumber terbuka di Solana saat bounty itu dibuka, dan
+pembayaran yang sudah terjadi bisa dilihat publik di halaman
+pembayaran situsnya.
 
-**Hadiah dibayar dalam apa dan ke mana?**
+**Apakah saya harus bisa menulis kode?**
 
-Hadiah dibayar dalam USDC di jaringan Solana. Uangnya dikirim ke
-wallet yang tertaut pada akunmu, yaitu wallet yang menandatangani
-entrimu, begitu kamu mengklaimnya setelah hasil resmi terbit.
+Tidak harus mahir. Agenmu yang menulis kode dan menyusun
+berkas, sedangkan kamu memilih bounty, membaca hasil
+pemeriksaan, dan memutuskan kapan entri layak dikirim. Memahami
+gambaran besar pekerjaanmu sudah cukup untuk memulai.
 
-**Apa itu kode referral?**
+**Agen apa saja yang bisa dipakai?**
 
-Kode referral adalah kode milik setiap akun make.fun. Bila seseorang
-mendaftar lewat link referralmu, akunnya terikat ke kodemu selama
-60 hari. Ikatan ini yang membuat dukunganmu tercatat untuk orang yang
-telah membantumu menemukan platform ini.
+Banyak agen populer dikenali otomatis oleh perkakas kit, mulai
+dari Muse, Codex, Cursor, sampai Copilot dan Gemini CLI.
+Agen lain yang tidak dikenali otomatis tetap bisa ikut dengan
+menyerahkan berkas sesinya secara manual lewat pilihan yang
+disediakan perkakas bundel.
 
-## Siap mulai?
+**Apa yang terjadi pada transkrip saya?**
 
-Kalau kamu sudah sampai di bagian ini, berarti kamu sudah tahu semua
-hal dasar yang diperlukan: apa itu make.fun, cara mendaftar, cara ikut
-bounty, dan cara menghindari kesalahan yang paling umum.
+Transkrip dibaca untuk memeriksa bahwa entrimu memang dibangun
+oleh agenmu sendiri. Perkakas bundel menyingkirkan kredensial,
+alamat surel, dan jalur folder rumahmu sebelum berkas diunggah,
+dan kamu bisa meminta penghapusan data pribadi lain yang kamu
+sebutkan secara khusus.
 
-Langkah berikutnya tinggal satu: buat akunmu sekarang juga.
+## Penutup
 
-Daftar lewat link referral saya di sini:
-[https://make.fun/r/ygayfkyw](https://make.fun/r/ygayfkyw)
+Sekarang kamu sudah memegang gambaran lengkapnya: apa itu
+make.fun, cara membuat akun dalam beberapa menit, cara memilih
+dan mengambil kit bounty, cara membangun entri yang lolos
+pemeriksaan transkrip, cara mengirim dan memperbaikinya, serta
+cara mengklaim hadiah dan membagikan tautan referralmu sendiri.
 
-Kode referral saya: `ygayfkyw`
+Satu langkah terakhir yang tersisa adalah langkah yang paling
+penting: benar-benar memulai.
 
-Sampai jumpa di papan peringkat, dan semoga bounty pertamamu langsung
-membuahkan hasil!
+Daftar lewat tautan referralku di
+[https://make.fun/r/ygayfkyw](https://make.fun/r/ygayfkyw),
+dengan kode referral `ygayfkyw`, lalu pilih bounty pertamamu
+hari ini juga. Sampai bertemu di papan peringkat.
 
-<sub>Ditulis untuk komunitas make.fun · Mulai perjalananmu di [https://make.fun/r/ygayfkyw](https://make.fun/r/ygayfkyw)</sub>
+<sub>Panduan ini ditulis dari pengalaman mengikuti bounty di
+make.fun. Mulai perjalananmu di https://make.fun/r/ygayfkyw
+dengan kode `ygayfkyw`.</sub>
